@@ -15,6 +15,6 @@ void UdpServer::readPendingDatagrams()
     {
         buf.resize(udpSocket->pendingDatagramSize());
         udpSocket->readDatagram(buf.data(), buf.size());
-        qDebug() << "Resive: " << buf.data();
+        qDebug() << "Recive: " << buf.data();
     }
 }
